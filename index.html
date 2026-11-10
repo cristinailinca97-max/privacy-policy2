@@ -1,0 +1,216 @@
+<title>Politică de Confidențialitate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Serif+Display&display=swap">
+
+<style>
+  /* Layout: single centered column, document feel */
+  :root {
+    --bg: #f7f6f4;
+    --surface: #ffffff;
+    --fg: #1a1816;
+    --muted: #6b6460;
+    --border: #e2ddd9;
+    --accent: #2c6faf;
+    --accent-light: #eef4fb;
+    --heading-font: 'DM Serif Display', Georgia, serif;
+    --body-font: 'Inter', system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17161a;
+      --surface: #211f26;
+      --fg: #e8e4de;
+      --muted: #9a9290;
+      --border: #332f38;
+      --accent: #5a9fd4;
+      --accent-light: #1c2a38;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17161a;
+    --surface: #211f26;
+    --fg: #e8e4de;
+    --muted: #9a9290;
+    --border: #332f38;
+    --accent: #5a9fd4;
+    --accent-light: #1c2a38;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body-font);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    padding-block: 48px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  .doc {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  section {
+    margin-bottom: 32px;
+  }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p {
+    margin: 0 0 14px;
+    color: var(--fg);
+    max-width: 65ch;
+  }
+
+  p:last-child { margin-bottom: 0; }
+
+  .notice {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 14px 16px;
+    margin-bottom: 14px;
+  }
+
+  .notice p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  code {
+    font-family: 'Menlo', 'Consolas', monospace;
+    font-size: 13px;
+    background: var(--border);
+    color: var(--fg);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  footer p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0;
+    max-width: none;
+  }
+
+  .app-id {
+    font-family: 'Menlo', 'Consolas', monospace;
+    font-size: 12px;
+    color: var(--muted);
+  }
+</style>
+
+<div class="doc">
+  <header>
+    <p class="eyebrow">Politică de Confidențialitate</p>
+    <h1>Digi &amp; Vodafone Alerts</h1>
+    <p class="subtitle">Aplicație internă de monitorizare a mențiunilor publice</p>
+  </header>
+
+  <section>
+    <h2>1. Scopul aplicației</h2>
+    <p>Această aplicație este un instrument intern de monitorizare a mențiunilor publice despre operatorii de telecomunicații din România (Digi, Vodafone, Orange) pe platforme publice de social media și surse de știri.</p>
+    <p>Aplicația nu este accesibilă publicului larg — funcționează exclusiv în rețeaua internă a companiei și este utilizată de echipa internă pentru monitorizarea percepției publice.</p>
+  </section>
+
+  <section>
+    <h2>2. Date colectate</h2>
+    <p>Aplicația colectează exclusiv conținut <strong>public</strong> disponibil pe internet:</p>
+    <div class="notice">
+      <p>Titluri și rezumate din fluxuri RSS publice · Postări publice de pe Reddit și Bluesky · Comentarii publice de pe YouTube · Conținut public de pe Facebook (pagini publice ale operatorilor)</p>
+    </div>
+    <p>Nu sunt colectate date personale identificabile ale utilizatorilor acestor platforme. Nu se efectuează logare, tracking sau profilare a persoanelor fizice.</p>
+  </section>
+
+  <section>
+    <h2>3. Utilizarea Facebook Graph API</h2>
+    <p>Aplicația utilizează Facebook Graph API (<code>v19.0</code>) exclusiv pentru citirea conținutului public de pe paginile oficiale ale operatorilor de telecomunicații monitorizați.</p>
+    <p>Datele obținute sunt stocate local pe serverul intern al companiei și nu sunt transmise către terți. Tokenul de acces Facebook este stocat în baza de date locală criptată și nu este expus public în niciun mod.</p>
+    <p>Utilizarea API-ului respectă <a href="https://developers.facebook.com/policy/" target="_blank" rel="noopener">Politica pentru Platforme Meta</a> și <a href="https://developers.facebook.com/terms/" target="_blank" rel="noopener">Termenii de Serviciu Meta</a>.</p>
+  </section>
+
+  <section>
+    <h2>4. Stocarea și retenția datelor</h2>
+    <p>Datele colectate sunt stocate într-o bază de date <code>SQLite</code> locală pe serverul intern <code>csoreporting</code>, accesibil exclusiv din rețeaua internă a companiei.</p>
+    <p>Datele sunt păstrate maximum <strong>90 de zile</strong>, după care sunt șterse automat prin procesul de curățare periodică al aplicației.</p>
+  </section>
+
+  <section>
+    <h2>5. Accesul la date</h2>
+    <p>Aplicația rulează pe portul <code>8082</code> al serverului intern și nu este expusă pe internet. Accesul este restricționat exclusiv la rețeaua internă a companiei. Nu există acces public la date sau la interfața aplicației.</p>
+  </section>
+
+  <section>
+    <h2>6. Contact</h2>
+    <p>Pentru orice întrebări legate de această politică de confidențialitate sau de modul în care aplicația utilizează datele, contactați administratorul de sistem sau departamentul IT.</p>
+  </section>
+
+  <footer>
+    <p>Ultima actualizare: noiembrie 2026</p>
+    <p class="app-id">App ID: 2071086990203664</p>
+  </footer>
+</div>
