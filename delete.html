@@ -1,0 +1,163 @@
+<title>Ștergere Date Utilizator</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=DM+Serif+Display&display=swap">
+
+<style>
+  :root {
+    --bg: #f7f6f4;
+    --surface: #ffffff;
+    --fg: #1a1816;
+    --muted: #6b6460;
+    --border: #e2ddd9;
+    --accent: #2c6faf;
+    --accent-light: #eef4fb;
+    --heading-font: 'DM Serif Display', Georgia, serif;
+    --body-font: 'Inter', system-ui, sans-serif;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #17161a;
+      --surface: #211f26;
+      --fg: #e8e4de;
+      --muted: #9a9290;
+      --border: #332f38;
+      --accent: #5a9fd4;
+      --accent-light: #1c2a38;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #17161a;
+    --surface: #211f26;
+    --fg: #e8e4de;
+    --muted: #9a9290;
+    --border: #332f38;
+    --accent: #5a9fd4;
+    --accent-light: #1c2a38;
+    color-scheme: dark;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--body-font);
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    padding-block: 48px 64px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+
+  .doc {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 28px;
+    margin-bottom: 36px;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 8px;
+    text-wrap: balance;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .notice {
+    background: var(--accent-light);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 6px 6px 0;
+    padding: 16px 18px;
+    margin-bottom: 28px;
+  }
+
+  .notice p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  section { margin-bottom: 28px; }
+
+  h2 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  p { margin: 0 0 14px; max-width: 65ch; }
+  p:last-child { margin-bottom: 0; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 20px;
+    margin-top: 48px;
+  }
+
+  footer p {
+    color: var(--muted);
+    font-size: 13px;
+    margin: 0;
+    max-width: none;
+  }
+</style>
+
+<div class="doc">
+  <header>
+    <p class="eyebrow">Ștergere Date Utilizator</p>
+    <h1>Digi &amp; Vodafone Alerts</h1>
+    <p class="subtitle">Aplicație internă de monitorizare a mențiunilor publice</p>
+  </header>
+
+  <div class="notice">
+    <p><strong>Această aplicație nu stochează date personale ale utilizatorilor Facebook.</strong> Aplicația colectează exclusiv conținut public de pe pagini publice ale operatorilor de telecomunicații și nu creează profiluri de utilizator.</p>
+  </div>
+
+  <section>
+    <h2>Ce date stocăm</h2>
+    <p>Aplicația stochează doar conținut public: titluri de postări, comentarii publice și link-uri, fără nicio informație personală identificabilă legată de contul tău Facebook. Nu stocăm ID-ul tău Facebook, numele, e-mailul sau orice alt atribut personal.</p>
+  </section>
+
+  <section>
+    <h2>Cum poți solicita ștergerea</h2>
+    <p>Deoarece nu stocăm date personale identificabile, nu există date de șters asociate contului tău. Dacă totuși ai nelămuriri, poți contacta administratorul de sistem la adresa de e-mail a companiei pentru confirmare.</p>
+  </section>
+
+  <footer>
+    <p>Ultima actualizare: noiembrie 2026 · App ID: 2071086990203664</p>
+  </footer>
+</div>
